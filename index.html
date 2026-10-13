@@ -5,12 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Gece Ekranı ve Uyku Borcu | Hikmet Emre Gültekin - 2516016024</title>
   
+	<!-- SEO ve Sosyal Medya Paylaşım Meta Etiketleri (Kılavuz Bölüm 8.5) -->
+	<meta name="description" content="8.500 kişinin gece akıllı telefon alışkanlıkları ve uyku borcu analizi. İnteraktif Scrollytelling veri hikayesi.">
+	<meta property="og:title" content="Gece Ekranı, Uyku Borcu ve Yorgunluk | Veri Hikayesi">
+	<meta property="og:description" content="Yatmadan önceki ekran süresi ertesi günkü enerjimizi nasıl etkiliyor? 8.500 kişilik veri analitiği çalışması.">
+	<meta property="og:image" content="docs/og-image.png">
+	<meta property="og:type" content="website">
+
 	<!-- Google Fonts: Inter -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   
-	<!-- CSS Dosyamız (css klasörü içinde) -->
+	<!-- CSS Dosyamız -->
 	<link rel="stylesheet" href="css/style.css">
   
 	<!-- Kütüphaneler: Scrollama.js ve Chart.js CDN Bağlantıları -->
@@ -29,33 +36,54 @@
 				8.500 kişinin gece ekran alışkanlıkları ve uyku verilerini inceledik. Yatmadan hemen önceki dakikaların ertesi günkü enerjimize, derin uyku oranımıza ve zihinsel yorgunluğumuza etkisini kaydırarak keşfedin.
 			</p>
 			<div class="meta-info">
-            <span><strong>Hazırlayan:</strong> Hikmet Emre Gültekin (2516016024)</span>
-            <span><strong>Bölüm:</strong> Büyük Veri Analistliği</span>
-            <span><strong>Veri Seti:</strong> 8.500 Katılımcı (Sleep Debt & Screen Time)</span>
-            </div>
+				<span><strong>Hazırlayan:</strong> Hikmet Emre Gültekin (2516016024)</span>
+				<span><strong>Bölüm:</strong> Büyük Veri Analistliği</span>
+				<span><strong>Tarih:</strong> 13 Ekim 2026</span>
+				<span><strong>Veri Seti:</strong> 8.500 Katılımcı (Sleep Debt & Screen Time)</span>
+			</div>
 			<div class="scroll-indicator">
-				<span>Aşağı Kaydırın</span>
+				<span>Aşağı Kaydırarak Hikâyeye Başlayın</span>
 				<div class="chevron">↓</div>
 			</div>
 		</div>
 	</header>
 
-	<!-- 2. SCROLLYTELLING BÖLÜMÜ -->
+	<!-- 2. BAĞLAM (CONTEXT) -->
+	<section class="container" style="padding: 3rem 1rem; max-width: 800px; text-align: center; color: #cbd5e1; font-size: 1.1rem; line-height: 1.8;">
+		<p>
+			Modern yaşamın en yaygın gece rutini haline gelen akıllı telefon kullanımı, çoğumuz için masum bir dinlenme gibi görünse de biyolojik saatimiz için ciddi bir uyarıcıdır. Bu çalışma, ekran karşısında geçirilen sürenin yalnızca uyku süresini değil, uyku kalitesini ve ertesi günün yorgunluk eşiğini nasıl belirlediğini nesnel verilerle ortaya koymaktadır.
+		</p>
+	</section>
+
+	<!-- 3. SCROLLYTELLING BÖLÜMÜ (EN AZ 6 ADIM & SABİT GRAFİK 1: ÇUBUK GRAFİK) -->
 	<section class="scrolly-section" id="scrolly">
 		<div class="sticky-graphic">
 			<div class="chart-card">
-				<div class="chart-header"><p id="chart-desc">İncelemek istediğiniz süre diliminin sütununa tıklayın.</p>
+				<div class="chart-header">
+					<p id="chart-desc">Kaydırdıkça grafik otomatik odaklanır veya sütunlara tıklayabilirsiniz.</p>
 					<h3 id="chart-title">Yatmadan Önceki Ekran Süresi ve Ertesi Gün Yorgunluk Düzeyi</h3>
-					
 				</div>
-				<div class="chart-wrapper" style="position: relative; height: 500px !important; width: 100%;">
-                <canvas id="scrollyChart"></canvas>
-                </div>
+				<div class="chart-wrapper" style="position: relative; height: 460px !important; width: 100%;">
+					<canvas id="scrollyChart"></canvas>
+				</div>
 			</div>
 		</div>
 
 		<article class="steps-article">
+			<!-- ADIM 0: GENEL BAKIŞ (Kılavuza göre 6. adım eklendi) -->
 			<div class="step is-active" data-step="0">
+				<div class="step-card">
+					<span class="step-num">00 / Genel Bakış</span>
+					<h3>8.500 Katılımcının Ortalaması</h3>
+					<p>
+						İncelenen tüm kitlede ortalama gece ekran süresi <strong>53.8 dakika</strong>, ortalama yorgunluk puanı ise 10 üzerinden <strong>4.56</strong> seviyesindedir. Ancak süre arttıkça bu dengenin nasıl bozulduğunu adım adım görelim.
+					</p>
+					<div class="stat-pill">Toplam Kitle: 8.500 Kişi • Ort. Toplam Uyku: 6.78 Saat</div>
+				</div>
+			</div>
+
+			<!-- ADIM 1 -->
+			<div class="step" data-step="1">
 				<div class="step-card">
 					<span class="step-num">01 / Düşük Maruziyet</span>
 					<h3>0 - 30 Dakika: Güvenli Bölge</h3>
@@ -66,7 +94,8 @@
 				</div>
 			</div>
 
-			<div class="step" data-step="1">
+			<!-- ADIM 2 -->
+			<div class="step" data-step="2">
 				<div class="step-card">
 					<span class="step-num">02 / Eşik Noktası</span>
 					<h3>31 - 60 Dakika: Çoğunluğun Alışkanlığı</h3>
@@ -77,7 +106,8 @@
 				</div>
 			</div>
 
-			<div class="step" data-step="2">
+			<!-- ADIM 3 -->
+			<div class="step" data-step="3">
 				<div class="step-card">
 					<span class="step-num">03 / Kritik Bölge</span>
 					<h3>61 - 90 Dakika: Yorgunluk Tırmanışta</h3>
@@ -88,7 +118,8 @@
 				</div>
 			</div>
 
-			<div class="step" data-step="3">
+			<!-- ADIM 4 -->
+			<div class="step" data-step="4">
 				<div class="step-card">
 					<span class="step-num">04 / Ciddi Uyku Borcu</span>
 					<h3>91 - 120 Dakika: Yüksek Risk</h3>
@@ -99,7 +130,8 @@
 				</div>
 			</div>
 
-			<div class="step" data-step="4">
+			<!-- ADIM 5 -->
+			<div class="step" data-step="5">
 				<div class="step-card">
 					<span class="step-num">05 / Kronik Tükenmişlik</span>
 					<h3>120+ Dakika: Mavi Işık ve Uyku İflası</h3>
@@ -112,11 +144,30 @@
 		</article>
 	</section>
 
-	<!-- 3. İKİNCİ BULGU: İÇERİK TÜRÜ ANALİZİ -->
-	<section class="content-breakdown-section">
+	<!-- 4. İÇERİK TÜRÜ ANALİZİ VE EK GÖRSELLEŞTİRMELER (GRAFİK 2 & GRAFİK 3) -->
+	<section class="content-breakdown-section" style="padding: 4rem 1rem;">
 		<div class="container">
 			<h2>Sadece Süre Değil, Ne Tükettiğiniz de Önemli</h2>
 			<p class="section-subtitle">Farklı içerik türlerinin gece ekran süresi ve uyku kalitesi üzerindeki etkileri:</p>
+
+			<!-- 2. ve 3. GRAFİK ALANI: YAN YANA İKİ GRAFİK (HALKA VE ÇİZGİ GRAFİK) -->
+			<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin: 2.5rem 0;">
+				<div class="chart-card" style="padding: 1.5rem; background: #131d31; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px;">
+					<h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #f8fafc;">GRAFİK 2: Gece Tercih Edilen Uygulama Dağılımı</h3>
+					<p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 1rem;">8.500 kişinin gece yatakta en çok vakit geçirdiği kategoriler (Halka Grafik)</p>
+					<div style="position: relative; height: 280px; width: 100%;">
+						<canvas id="categoryDoughnutChart"></canvas>
+					</div>
+				</div>
+
+				<div class="chart-card" style="padding: 1.5rem; background: #131d31; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px;">
+					<h3 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: #f8fafc;">GRAFİK 3: Süre Arttıkça Uyku Dinamiklerindeki Bozulma</h3>
+					<p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 1rem;">Uykuya dalma süresi artarken derin uyku oranının düşüş eğilimi (Çizgi Grafik)</p>
+					<div style="position: relative; height: 280px; width: 100%;">
+						<canvas id="trendLineChart"></canvas>
+					</div>
+				</div>
+			</div>
       
 			<div class="app-cards-grid" id="appCardsContainer">
 				<!-- JS dinamik olarak app_distribution.json ile dolduracak -->
@@ -124,7 +175,7 @@
 		</div>
 	</section>
 
-	<!-- 4. ETKİLEŞİMLİ BÖLÜM: OKUYUCU KEŞFİ -->
+	<!-- 5. ETKİLEŞİMLİ BÖLÜM: OKUYUCU KEŞFİ VE GRAFİK 4 (RADAR GRAFİK) -->
 	<section class="interactive-section">
 		<div class="container">
 			<div class="interactive-box">
@@ -158,32 +209,65 @@
 				<div class="result-display" id="userResultDisplay">
 					<!-- JS dinamik dolduracak -->
 				</div>
+
+				<!-- GRAFİK 4: KRONOTİP PROFİLİ (RADAR GRAFİK) -->
+				<div style="margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08);">
+					<h3 style="font-size: 1.1rem; text-align: center; color: #f8fafc; margin-bottom: 0.3rem;">GRAFİK 4: Biyolojik Kronotiplerin Uyku ve Yorgunluk Profili</h3>
+					<p style="font-size: 0.85rem; text-align: center; color: #94a3b8; margin-bottom: 1.5rem;">Erken kalkanlar, dengeli grup ve gece kuşlarının karşılaştırmalı analizi (Radar Grafik)</p>
+					<div style="position: relative; height: 320px; max-width: 500px; margin: 0 auto;">
+						<canvas id="chronotypeRadarChart"></canvas>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- 5. METODOLOJİ VE FOOTER -->
+	<!-- 6. SONUÇ BÖLÜMÜ (KILAVUZ BÖLÜM 5.2 ZORUNLU ALAN) -->
+	<section class="container" style="padding: 4rem 1rem; max-width: 860px; line-height: 1.8; color: #cbd5e1;">
+		<h2 style="color: #f8fafc; margin-bottom: 1rem;">Sonuç: Peki Ne Yapmalı? (Dijital Hijyen)</h2>
+		<p style="margin-bottom: 1rem;">
+			Elde edilen bulgular, gece ekran süresinin <strong>60 dakikayı aşmasıyla birlikte</strong> uyku borcunun kritik bir eşiğe ulaştığını ve yorgunluk skorlarının belirgin şekilde tırmandığını göstermektedir. Özellikle algoritma destekli kısa videolar ve mobil oyunlar gibi yüksek dopamin üreten içerikler, mavi ışık maruziyetinin ötesinde bilişsel uyarılmayı canlı tutarak uykuya dalma süresini ortalama 34 dakikanın üzerine çıkarmaktadır.
+		</p>
+		<p>
+			<strong>Çıkarımlar ve Sınırlılıklar:</strong> Yatmadan en az 45 dakika önce ekran temasını kesmek, pasif/durgun içeriklere (örneğin e-kitap) yönelmek derin uyku oranını korumada en güçlü koruyucu faktördür. Bu çalışmadaki veriler anket ve sensör kayıtlarına dayalı kesitsel bir analiz olup doğrudan nedensellik yerine güçlü istatistiksel korelasyonları temsil etmektedir.
+		</p>
+	</section>
+
+	<!-- 7. YÖNTEM VE AKADEMİK BEYAN (KILAVUZ BÖLÜM 5.2 & 13) -->
+	<section class="container" style="padding: 2.5rem 1rem; max-width: 860px; background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; margin-bottom: 3rem; font-size: 0.95rem; color: #94a3b8; line-height: 1.7;">
+		<h3 style="color: #f8fafc; margin-bottom: 0.8rem;">Yöntem ve Veri Güvenilirliği</h3>
+		<ul style="padding-left: 1.2rem; margin-bottom: 1rem;">
+			<li><strong>Veri Seti:</strong> Kaggle açık veri portalından temin edilen <em>"Sleep Debt & Screen Time: Late Night Phone Habits"</em> (8.500 kullanıcı kaydı, CC0 lisansı).</li>
+			<li><strong>Veri Temizleme & Analiz:</strong> Python (Pandas, NumPy) ile eksik veriler incelenmiş, süre dilimleri kategorize edilmiş ve sitede kullanılan JSON dosyaları `notebooks/analiz.ipynb` içinde üretilmiştir.</li>
+			<li><strong>Kullanılan Araçlar:</strong> Vanilla HTML5, CSS3, JavaScript (ES6+), Chart.js 4.x ve Scrollama.js.</li>
+			<li><strong>Yapay Zekâ Kullanım Beyanı:</strong> Kod yazımında algoritma optimizasyonu ve CSS hata ayıklama süreçlerinde yapay zekâ asistanlarından teknik destek alınmış; veri analizi, görselleştirme kararları ve hikâye kurgusu öğrenci tarafından yürütülmüştür.</li>
+		</ul>
+	</section>
+
+	<!-- 8. YAZAR VE FOOTER -->
 	<footer class="footer">
 		<div class="container footer-content">
 			<div class="footer-col">
-				<h4>Veri Güvenilirliği</h4>
-				<p>Bu çalışma "Sleep Debt & Screen Time: Late Night Phone Habits" veri setindeki 8.500 tekil kullanıcının kayıtları üzerinden Python (Pandas) ile analiz edilmiş ve web ortamına optimize edilmiştir.</p>
+				<h4>Proje Hakkında</h4>
+				<p>
+					Manisa Celal Bayar Üniversitesi<br>
+					Büyük Veri Analistliği Programı<br>
+					Kullanıcı Arayüzü Tasarımı Dersi • Güz Dönemi
+				</p>
 			</div>
 			<div class="footer-col">
-             <h4>Hakkında</h4>
-              <p>
-            Manisa Celal Bayar Üniversitesi<br>
-            Büyük Veri Analistliği Bölümü<br>
-            Kullanıcı Arayüzü Tasarımı Dersi • Dönem Veri Hikayesi Projesi<br>
-            <strong>Öğrenci:</strong> Hikmet Emre Gültekin<br>
-            <strong>Öğrenci No:</strong> 2516016024<br>
-            <strong>Bölüm:</strong> Büyük Veri Analistliği<br>
-             </p>
-            </div>
+				<h4>Geliştirici & İletişim</h4>
+				<p>
+					<strong>Öğrenci:</strong> Hikmet Emre Gültekin<br>
+					<strong>Öğrenci No:</strong> 2516016024<br>
+					<strong>GitHub:</strong> <a href="https://github.com/HikmetEmre45" target="_blank" style="color: #38bdf8;">github.com/HikmetEmre45</a><br>
+					<strong>Canlı Demo:</strong> <a href="https://hikmetemre45.github.io/sleep-debt-analysis-/" target="_blank" style="color: #38bdf8;">sleep-debt-analysis-</a>
+				</p>
+			</div>
 		</div>
 	</footer>
 
-	<!-- Javascript Kodumuz (js klasörü içinde) -->
+	<!-- Javascript Kodumuz -->
 	<script src="js/app.js"></script>
 </body>
 </html>
