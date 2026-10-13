@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gece Ekranı ve Uyku Borcu | Hikmet Emre Gültekin - 2516016024</title>
+  
+	<!-- Google Fonts: Inter -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  
+	<!-- CSS Dosyamız (css klasörü içinde) -->
+	<link rel="stylesheet" href="css/style.css">
+  
+	<!-- Kütüphaneler: Scrollama.js ve Chart.js CDN Bağlantıları -->
+	<script src="https://unpkg.com/intersection-observer@0.12.2/intersection-observer.js"></script>
+	<script src="https://unpkg.com/scrollama"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body> 
+    
+	<!-- 1. GİRİŞ (HERO SECTION) -->
+	<header class="hero">
+		<div class="container hero-content">
+			<span class="badge">Kullanıcı Arayüzü Tasarımı Projesi • Veri Odaklı Hikaye Anlatımı</span>
+			<h1>Yatağa Girdiğimizde Telefonu Bırakmak Neden Bu Kadar Zor?</h1>
+			<p class="lead">
+				8.500 kişinin gece ekran alışkanlıkları ve uyku verilerini inceledik. Yatmadan hemen önceki dakikaların ertesi günkü enerjimize, derin uyku oranımıza ve zihinsel yorgunluğumuza etkisini kaydırarak keşfedin.
+			</p>
+			<div class="meta-info">
+            <span><strong>Hazırlayan:</strong> Hikmet Emre Gültekin (2516016024)</span>
+            <span><strong>Bölüm:</strong> Büyük Veri Analistliği</span>
+            <span><strong>Veri Seti:</strong> 8.500 Katılımcı (Sleep Debt & Screen Time)</span>
+            </div>
+			<div class="scroll-indicator">
+				<span>Aşağı Kaydırın</span>
+				<div class="chevron">↓</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- 2. SCROLLYTELLING BÖLÜMÜ -->
+	<section class="scrolly-section" id="scrolly">
+		<div class="sticky-graphic">
+			<div class="chart-card">
+				<div class="chart-header"><p id="chart-desc">İncelemek istediğiniz süre diliminin sütununa tıklayın.</p>
+					<h3 id="chart-title">Yatmadan Önceki Ekran Süresi ve Ertesi Gün Yorgunluk Düzeyi</h3>
+					
+				</div>
+				<div class="chart-wrapper" style="position: relative; height: 500px !important; width: 100%;">
+                <canvas id="scrollyChart"></canvas>
+                </div>
+			</div>
+		</div>
+
+		<article class="steps-article">
+			<div class="step is-active" data-step="0">
+				<div class="step-card">
+					<span class="step-num">01 / Düşük Maruziyet</span>
+					<h3>0 - 30 Dakika: Güvenli Bölge</h3>
+					<p>
+						Yatmadan önce ekranla 30 dakikadan az temas edenlerin uykuya dalma süresi ortalama <strong>28.6 dakika</strong> iken, ertesi gün bildirilen yorgunluk skoru en düşük seviyede (<strong>4.22 / 10</strong>).
+					</p>
+					<div class="stat-pill">Derin Uyku: %18.1 • Gece Uyanma: 2.15 kez</div>
+				</div>
+			</div>
+
+			<div class="step" data-step="1">
+				<div class="step-card">
+					<span class="step-num">02 / Eşik Noktası</span>
+					<h3>31 - 60 Dakika: Çoğunluğun Alışkanlığı</h3>
+					<p>
+						Katılımcıların en büyük grubu (3.559 kişi) 1 saate kadar ekran kullanıyor. Yorgunluk skoru <strong>4.46</strong>'ya yükselirken derin uyku oranı yavaş yavaş aşınmaya başlıyor.
+					</p>
+					<div class="stat-pill">Derin Uyku: %17.7 • Gece Uyanma: 2.24 kez</div>
+				</div>
+			</div>
+
+			<div class="step" data-step="2">
+				<div class="step-card">
+					<span class="step-num">03 / Kritik Bölge</span>
+					<h3>61 - 90 Dakika: Yorgunluk Tırmanışta</h3>
+					<p>
+						1 saati aşan ekran kullanımıyla beraber uykuya dalma süresi <strong>33.6 dakikaya</strong> fırlıyor. Ertesi gün yorgunluğu gözle görülür şekilde artışa geçiyor (<strong>4.76</strong>).
+					</p>
+					<div class="stat-pill">Derin Uyku: %17.2 • Gece Uyanma: 2.41 kez</div>
+				</div>
+			</div>
+
+			<div class="step" data-step="3">
+				<div class="step-card">
+					<span class="step-num">04 / Ciddi Uyku Borcu</span>
+					<h3>91 - 120 Dakika: Yüksek Risk</h3>
+					<p>
+						Gece 1.5 - 2 saat ekrana bakan bireylerde gece uyanma sıklığı <strong>2.82 keze</strong> çıkıyor ve ertesi gün yorgunluk puanı <strong>5.16</strong> seviyesini aşıyor.
+					</p>
+					<div class="stat-pill alert">Derin Uyku: %16.45 • Gece Uyanma: 2.82 kez</div>
+				</div>
+			</div>
+
+			<div class="step" data-step="4">
+				<div class="step-card">
+					<span class="step-num">05 / Kronik Tükenmişlik</span>
+					<h3>120+ Dakika: Mavi Işık ve Uyku İflası</h3>
+					<p>
+						Yatakta 2 saatten fazla ekran kullanan 441 kişilik grupta ortalama yorgunluk skoru zirve yapıyor (<strong>5.38</strong>). Katılımcıların uykuya dalması neredeyse <strong>40 dakikayı</strong> buluyor.
+					</p>
+					<div class="stat-pill alert">Derin Uyku: %16.09 • Gece Uyanma: 2.96 kez</div>
+				</div>
+			</div>
+		</article>
+	</section>
+
+	<!-- 3. İKİNCİ BULGU: İÇERİK TÜRÜ ANALİZİ -->
+	<section class="content-breakdown-section">
+		<div class="container">
+			<h2>Sadece Süre Değil, Ne Tükettiğiniz de Önemli</h2>
+			<p class="section-subtitle">Farklı içerik türlerinin gece ekran süresi ve uyku kalitesi üzerindeki etkileri:</p>
+      
+			<div class="app-cards-grid" id="appCardsContainer">
+				<!-- JS dinamik olarak app_distribution.json ile dolduracak -->
+			</div>
+		</div>
+	</section>
+
+	<!-- 4. ETKİLEŞİMLİ BÖLÜM: OKUYUCU KEŞFİ -->
+	<section class="interactive-section">
+		<div class="container">
+			<div class="interactive-box">
+				<h2>Kendinizi Karşılaştırın</h2>
+				<p>Biyolojik ritminizi (kronotipinizi) ve gece en çok baktığınız içerik türünü seçerek 8.500 katılımcı arasındaki ortalamanızı görün.</p>
+        
+				<div class="controls-row">
+					<div class="control-group">
+						<label for="chronotypeSelect">Biyolojik Ritim (Kronotip):</label>
+						<select id="chronotypeSelect">
+							<option value="Early Bird">Erken Kalkan (Early Bird)</option>
+							<option value="Intermediate" selected>Dengeli (Intermediate)</option>
+							<option value="Night Owl">Gece Kuşu (Night Owl)</option>
+						</select>
+					</div>
+          
+					<div class="control-group">
+						<label for="appSelect">Gece En Çok Kullanılan Uygulama:</label>
+						<select id="appSelect">
+							<option value="Short-Form Video" selected>Kısa Videolar (Reels / TikTok)</option>
+							<option value="Social Media">Sosyal Medya</option>
+							<option value="Gaming">Mobil Oyun</option>
+							<option value="Streaming">Dizi / Film İzleme</option>
+							<option value="Messaging">Mesajlaşma</option>
+							<option value="News">Haberler</option>
+							<option value="E-Reading">E-Kitap / Okuma</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="result-display" id="userResultDisplay">
+					<!-- JS dinamik dolduracak -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- 5. METODOLOJİ VE FOOTER -->
+	<footer class="footer">
+		<div class="container footer-content">
+			<div class="footer-col">
+				<h4>Veri Güvenilirliği</h4>
+				<p>Bu çalışma "Sleep Debt & Screen Time: Late Night Phone Habits" veri setindeki 8.500 tekil kullanıcının kayıtları üzerinden Python (Pandas) ile analiz edilmiş ve web ortamına optimize edilmiştir.</p>
+			</div>
+			<div class="footer-col">
+             <h4>Hakkında</h4>
+              <p>
+            Manisa Celal Bayar Üniversitesi<br>
+            Büyük Veri Analistliği Bölümü<br>
+            Kullanıcı Arayüzü Tasarımı Dersi • Dönem Veri Hikayesi Projesi<br>
+            <strong>Öğrenci:</strong> Hikmet Emre Gültekin<br>
+            <strong>Öğrenci No:</strong> 2516016024<br>
+            <strong>Bölüm:</strong> Büyük Veri Analistliği<br>
+             </p>
+            </div>
+		</div>
+	</footer>
+
+	<!-- Javascript Kodumuz (js klasörü içinde) -->
+	<script src="js/app.js"></script>
+</body>
+</html>

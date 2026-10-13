@@ -1,0 +1,47 @@
+[
+  {
+    "time_bracket":"0-30 dk",
+    "user_count":2271,
+    "avg_fatigue":4.22,
+    "avg_sleep_onset":28.57,
+    "avg_total_sleep":6.88,
+    "avg_awakenings":2.15,
+    "avg_deep_sleep_pct":18.12
+  },
+  {
+    "time_bracket":"31-60 dk",
+    "user_count":3559,
+    "avg_fatigue":4.46,
+    "avg_sleep_onset":30.5,
+    "avg_total_sleep":6.8,
+    "avg_awakenings":2.24,
+    "avg_deep_sleep_pct":17.71
+  },
+  {
+    "time_bracket":"61-90 dk",
+    "user_count":1633,
+    "avg_fatigue":4.76,
+    "avg_sleep_onset":33.58,
+    "avg_total_sleep":6.72,
+    "avg_awakenings":2.41,
+    "avg_deep_sleep_pct":17.16
+  },
+  {
+    "time_bracket":"91-120 dk",
+    "user_count":596,
+    "avg_fatigue":5.16,
+    "avg_sleep_onset":36.43,
+    "avg_total_sleep":6.59,
+    "avg_awakenings":2.82,
+    "avg_deep_sleep_pct":16.45
+  },
+  {
+    "time_bracket":"120+ dk",
+    "user_count":441,
+    "avg_fatigue":5.38,
+    "avg_sleep_onset":38.3,
+    "avg_total_sleep":6.55,
+    "avg_awakenings":2.96,
+    "avg_deep_sleep_pct":16.09
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "chronotype":"Early Bird",
+    "primary_app_category":"E-Reading",
+    "user_count":181,
+    "avg_screen_time":53.01,
+    "avg_fatigue":3.91,
+    "avg_onset":24.01,
+    "avg_sleep_hours":7.02,
+    "avg_deep_sleep_pct":17.54
+  },
+  {
+    "chronotype":"Early Bird",
+    "primary_app_category":"Gaming",
+    "user_count":185,
+    "avg_screen_time":52.14,
+    "avg_fatigue":4.44,
+    "avg_onset":33.32,
+    "avg_sleep_hours":7.08,
+    "avg_deep_sleep_pct":17.51
+  },
+  {
+    "chronotype":"Early Bird",
+    "primary_app_category":"Messaging",
+    "user_count":191,
+    "avg_screen_time":55.07,
+    "avg_fatigue":4.38,
+    "avg_onset":31.04,
+    "avg_sleep_hours":7.0,
+    "avg_deep_sleep_pct":17.22
+  },
+  {
+    "chronotype":"Early Bird",
+    "primary_app_category":"News",
+    "user_count":149,
+    "avg_screen_time":54.09,
+    "avg_fatigue":4.24,
+    "avg_onset":29.48,
+    "avg_sleep_hours":7.05,
+    "avg_deep_sleep_pct":17.55
+  },
+  {
+    "chronotype":"Early Bird",
+    "primary_app_category":"Short-Form Video",
+    "user_count":621,
+    "avg_screen_time":53.23,
+    "avg_fatigue":4.52,
+    "avg_onset":34.95,
+    "avg_sleep_hours":7.16,
+    "avg_deep_sleep_pct":17.47
+  },
+  {
+    "chronotype":"Early Bird",
+    "primary_app_category":"Social Media",
+    "user_count":452,
+    "avg_screen_time":53.09,
+    "avg_fatigue":4.43,
+    "avg_onset":32.84,
+    "avg_sleep_hours":7.1,
+    "avg_deep_sleep_pct":17.56
+  },
+  {
+    "chronotype":"Early Bird",
+    "primary_app_category":"Streaming",
+    "user_count":288,
+    "avg_screen_time":55.18,
+    "avg_fatigue":4.26,
+    "avg_onset":29.5,
+    "avg_sleep_hours":7.02,
+    "avg_deep_sleep_pct":17.56
+  },
+  {
+    "chronotype":"Intermediate",
+    "primary_app_category":"E-Reading",
+    "user_count":309,
+    "avg_screen_time":52.8,
+    "avg_fatigue":4.0,
+    "avg_onset":22.92,
+    "avg_sleep_hours":6.75,
+    "avg_deep_sleep_pct":17.65
+  },
+  {
+    "chronotype":"Intermediate",
+    "primary_app_category":"Gaming",
+    "user_count":367,
+    "avg_screen_time":55.42,
+    "avg_fatigue":4.62,
+    "avg_onset":32.99,
+    "avg_sleep_hours":6.89,
+    "avg_deep_sleep_pct":17.54
+  },
+  {
+    "chronotype":"Intermediate",
+    "primary_app_category":"Messaging",
+    "user_count":305,
+    "avg_screen_time":52.4,
+    "avg_fatigue":4.41,
+    "avg_onset":30.52,
+    "avg_sleep_hours":6.86,
+    "avg_deep_sleep_pct":17.46
+  },
+  {
+    "chronotype":"Intermediate",
+    "primary_app_category":"News",
+    "user_count":265,
+    "avg_screen_time":55.26,
+    "avg_fatigue":4.37,
+    "avg_onset":28.67,
+    "avg_sleep_hours":6.82,
+    "avg_deep_sleep_pct":17.42
+  },
+  {
+    "chronotype":"Intermediate",
+    "primary_app_category":"Short-Form Video",
+    "user_count":994,
+    "avg_screen_time":55.17,
+    "avg_fatigue":4.74,
+    "avg_onset":35.16,
+    "avg_sleep_hours":6.86,
+    "avg_deep_sleep_pct":17.48
+  },
+  {
+    "chronotype":"Intermediate",
+    "primary_app_category":"Social Media",
+    "user_count":738,
+    "avg_screen_time":54.25,
+    "avg_fatigue":4.57,
+    "avg_onset":32.32,
+    "avg_sleep_hours":6.87,
+    "avg_deep_sleep_pct":17.46
+  },
+  {
+    "chronotype":"Intermediate",
+    "primary_app_category":"Streaming",
+    "user_count":488,
+    "avg_screen_time":55.6,
+    "avg_fatigue":4.37,
+    "avg_onset":29.13,
+    "avg_sleep_hours":6.79,
+    "avg_deep_sleep_pct":17.5
+  },
+  {
+    "chronotype":"Night Owl",
+    "primary_app_category":"E-Reading",
+    "user_count":221,
+    "avg_screen_time":50.85,
+    "avg_fatigue":4.2,
+    "avg_onset":22.73,
+    "avg_sleep_hours":6.39,
+    "avg_deep_sleep_pct":17.5
+  },
+  {
+    "chronotype":"Night Owl",
+    "primary_app_category":"Gaming",
+    "user_count":330,
+    "avg_screen_time":56.5,
+    "avg_fatigue":4.86,
+    "avg_onset":32.74,
+    "avg_sleep_hours":6.52,
+    "avg_deep_sleep_pct":17.56
+  },
+  {
+    "chronotype":"Night Owl",
+    "primary_app_category":"Messaging",
+    "user_count":257,
+    "avg_screen_time":50.68,
+    "avg_fatigue":4.56,
+    "avg_onset":29.41,
+    "avg_sleep_hours":6.54,
+    "avg_deep_sleep_pct":17.84
+  },
+  {
+    "chronotype":"Night Owl",
+    "primary_app_category":"News",
+    "user_count":245,
+    "avg_screen_time":52.29,
+    "avg_fatigue":4.59,
+    "avg_onset":27.75,
+    "avg_sleep_hours":6.33,
+    "avg_deep_sleep_pct":17.67
+  },
+  {
+    "chronotype":"Night Owl",
+    "primary_app_category":"Short-Form Video",
+    "user_count":853,
+    "avg_screen_time":54.12,
+    "avg_fatigue":4.92,
+    "avg_onset":34.06,
+    "avg_sleep_hours":6.52,
+    "avg_deep_sleep_pct":17.6
+  },
+  {
+    "chronotype":"Night Owl",
+    "primary_app_category":"Social Media",
+    "user_count":644,
+    "avg_screen_time":51.46,
+    "avg_fatigue":4.78,
+    "avg_onset":32.11,
+    "avg_sleep_hours":6.53,
+    "avg_deep_sleep_pct":17.62
+  },
+  {
+    "chronotype":"Night Owl",
+    "primary_app_category":"Streaming",
+    "user_count":417,
+    "avg_screen_time":52.18,
+    "avg_fatigue":4.53,
+    "avg_onset":28.73,
+    "avg_sleep_hours":6.5,
+    "avg_deep_sleep_pct":17.67
+  }
+]
